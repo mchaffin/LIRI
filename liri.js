@@ -1,5 +1,24 @@
 // main LIRI javascript file
 
+// dotenv package 
+require("dotenv").config();
+
+// Core node package for reading and writing files
+var fs = require("fs");
+
+// Request npm package
+var request = require("request");
+
+//  API Keys reqired 
+var apiKeys = require("./keys.js");
+
+// Sample 
+//var spotify = new Spotify(keys.spotify);
+//var client = new Twitter(keys.twitter);
+
+//console.log(client);
+//console.log(spotify);
+
 // get command line arguments
 var action = process.argv[2];    // action value 
 var num1 = process.argv[3];      // first parameter
